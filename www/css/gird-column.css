@@ -1,3 +1,4 @@
+
 html
 {
 	box-sizing : border-box;
@@ -38,10 +39,12 @@ select
 
 .row
 {
-	display        : flex;
-	flex-direction : row;
-	padding        : 0;
-	width          : 100%;
+	display                : flex;
+	display                : -webkit-flex;
+	flex-direction         : row;
+	-webkit-flex-direction : row;
+	padding                : 0;
+	width                  : 100%;
 }
 
 .col
@@ -51,19 +54,20 @@ select
 
 .row .col
 {
-	display     : block;
-	flex        : 1;
-	margin-left : 0;
-	max-width   : 100%;
+	display          : block;
+	flex             : 1;
+	-webkit-box-flex : 1;
+	margin-left      : 0;
+	max-width        : 100%;
 
 	/*	Изменеие padding колонок		*/
 	/**/ /**/
 	/**/
-	padding     : 0 10px; /**/
+	padding          : 0 10px; /**/
 	/**/ /**/
 	/*	Изменеие padding колонок		*/
 
-	width       : 100%;
+	width            : 100%;
 }
 
 .row.no-padding .col
@@ -78,27 +82,32 @@ select
 
 .row.row-top
 {
-	align-items : flex-start;
+	align-items         : flex-start;
+	-webkit-align-items : flex-start;
 }
 
 .row.row-bottom
 {
-	align-items : flex-end;
+	align-items         : flex-end;
+	-webkit-align-items : flex-end;
 }
 
 .row.row-center
 {
-	align-items : center;
+	align-items         : center;
+	-webkit-align-items : center;
 }
 
 .row.row-stretch
 {
-	align-items : stretch;
+	align-items         : stretch;
+	-webkit-align-items : stretch;
 }
 
 .row.row-baseline
 {
-	align-items : baseline;
+	align-items         : baseline;
+	-webkit-align-items : baseline;
 }
 
 .row .col.col-top
@@ -460,9 +469,9 @@ select
 	}
 
 	.row .col.order-md-12
-		{
+	{
 		order : 12;
-		}
+	}
 
 	.md-visible
 	{
