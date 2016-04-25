@@ -3,14 +3,14 @@
 <html>
 <head>
 
-		<meta charset="utf-8">
-		<title>Колоночная верстка</title>
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/reset-min.css">
-		<link rel="stylesheet" type="text/css" href="css/gird-column.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<title>Колоночная верстка</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset-min.css">
+	<link rel="stylesheet" type="text/css" href="css/gird-column.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
@@ -36,21 +36,28 @@
 
 		<div class="row row-wrap row-top">
 
-			<!-- <div class="block col "></div> -->
-			<div class="block col xs-6 sm-4 md-3 md-offset-1 lg-2">
+			<div class="block col xs-1 order-md-8 order-lg-1">1
 				<div class="block1">1.1</div>
 				<div class="block1">1.2</div>
 			</div>
-			<div class="block col xs-6 sm-4 md-4 lg-4"><div class="block1">2</div></div>
-			<div class="block col xs-6 sm-4 md-3 lg-2"><div class="block1">3</div></div>
-			<div class="block col xs-visible lg-2"><div class="block1">4</div></div>
-			<!-- <div class="block col xs-1 "></div>
-			<div class="block col xs-1"></div>
-			<div class="block col xs-1"></div>
-			<div class="block col xs-1"></div>
-			<div class="block col xs-1"></div>
-			<div class="block col xs-1"></div>
-			<div class="block col xs-1"></div> -->
+
+			<div class="block col xs-1 order-md-2 order-lg-5">
+				<div class="block1">2</div>
+			</div>
+			<div class="block col xs-1 order-md-3 order-lg-3">
+				<div class="block1">3</div>
+			</div>
+			<div class="block col xs-1 lg-2 sm-hidden order-md-4 order-lg-4">
+				<div class="block1">4</div>
+			</div>
+			<div class="block col xs-1 sm-4 md-1 lg-offset-1 order-md-5 order-lg-2">5</div>
+			<div class="block col xs-1 order-md-6 order-lg-6">6</div>
+			<div class="block col xs-1 order-md-7 order-lg-10">7</div>
+			<div class="block col xs-1 lg-1 order-md-1 order-lg-8">8</div>
+			<div class="block col xs-1 order-md-9 order-lg-9 lg-hidden">9</div>
+			<div class="block col xs-1 order-md-10 order-lg-7">10</div>
+			<div class="block col xs-1 order-md-11 order-lg-11">11</div>
+			<div class="block col xs-1 order-md-12 lg-hidden order-lg-12">12</div>
 
 		</div>
 
